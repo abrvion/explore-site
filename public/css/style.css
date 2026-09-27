@@ -1,0 +1,2166 @@
+/* =====================================================
+   EXPLORE
+   Global Styles
+===================================================== */
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+
+    --background: #030813;
+    --background-soft: #07101e;
+
+    --card-background: rgba(9, 19, 34, 0.78);
+
+    --border: rgba(147, 174, 220, 0.16);
+
+    --text: #f5f7ff;
+    --text-soft: #c0cad9;
+    --text-muted: #9aa8bd;
+
+    --purple: #8d6bff;
+    --purple-light: #b19cff;
+
+    --blue: #68a8ff;
+    --cyan: #51e4ff;
+
+    --green: #38e7b1;
+    --red: #ff647c;
+
+    --orange: #ff9b37;
+
+    --radius: 24px;
+
+    --shadow:
+        0 30px 80px rgba(0, 0, 0, 0.38);
+
+    --serif:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    --sans:
+        "DM Sans",
+        Arial,
+        sans-serif;
+}
+
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    background:
+
+        radial-gradient(
+            circle at 73% 12%,
+            rgba(79, 76, 170, 0.11),
+            transparent 26%
+        ),
+
+        radial-gradient(
+            circle at 12% 72%,
+            rgba(61, 105, 170, 0.08),
+            transparent 30%
+        ),
+
+        var(--background);
+
+    color: var(--text);
+
+    font-family: var(--sans);
+
+    overflow-x: hidden;
+}
+
+
+button,
+a {
+
+    font: inherit;
+}
+
+
+button {
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+}
+
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+
+    width:
+        min(
+            1400px,
+            calc(100% - 72px)
+        );
+
+    margin: 0 auto;
+
+    padding-bottom: 30px;
+}
+
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+
+    height: 86px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.logo {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.34em;
+}
+
+
+.logo-mark {
+
+    width: 37px;
+    height: 37px;
+
+    color: var(--purple-light);
+}
+
+
+.logo-mark svg {
+
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 560px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    isolation: isolate;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #030813 0%,
+            rgba(3, 8, 19, 0.97) 27%,
+            rgba(3, 8, 19, 0.48) 60%,
+            rgba(3, 8, 19, 0.12) 100%
+        ),
+
+        linear-gradient(
+            180deg,
+            #182a4a 0%,
+            #35486a 40%,
+            #a66f78 70%,
+            #07101d 100%
+        );
+
+    box-shadow: var(--shadow);
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 55%;
+
+    padding:
+        70px
+        0
+        70px
+        52px;
+}
+
+
+
+/* =====================================================
+   HERO EYEBROW
+===================================================== */
+
+.hero-eyebrow {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+    color: #b4c0d5;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.28em;
+
+    line-height: 1;
+}
+
+
+.eyebrow-line {
+
+    width: 56px;
+
+    height: 1px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(180, 192, 213, 0.7),
+            transparent
+        );
+}
+
+
+
+/* =====================================================
+   HERO HEADING
+===================================================== */
+
+.hero h1 {
+
+    font-family: var(--serif);
+
+    font-size:
+        clamp(
+            50px,
+            5.4vw,
+            78px
+        );
+
+    line-height: 0.98;
+
+    letter-spacing: -0.045em;
+
+    font-weight: 600;
+}
+
+
+.hero h1 span {
+
+    color: var(--purple-light);
+
+    text-shadow:
+        0 0 35px
+        rgba(141, 107, 255, 0.25);
+}
+
+
+
+/* =====================================================
+   HERO DESCRIPTION
+===================================================== */
+
+.hero-description {
+
+    max-width: 470px;
+
+    margin-top: 25px;
+
+    margin-bottom: 30px;
+
+    color: var(--text-soft);
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+
+
+/* =====================================================
+   INSPIRE BUTTON
+===================================================== */
+
+.inspire-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding:
+        8px
+        17px
+        8px
+        9px;
+
+    border-radius: 999px;
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #7257ff,
+            #a477ff
+        );
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    box-shadow:
+
+        0 15px 35px
+        rgba(100, 72, 255, 0.3);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.inspire-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+
+        0 20px 45px
+        rgba(100, 72, 255, 0.4);
+}
+
+
+.button-icon {
+
+    width: 34px;
+    height: 34px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.14);
+}
+
+
+.button-arrow {
+
+    margin-left: 4px;
+
+    font-size: 18px;
+}
+
+
+
+/* =====================================================
+   HERO VISUAL
+===================================================== */
+
+.hero-visual {
+
+    position: absolute;
+
+    inset:
+        0
+        0
+        0
+        31%;
+
+    z-index: -1;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 65% 25%,
+            rgba(177, 156, 255, 0.3),
+            transparent 15%
+        );
+}
+
+
+
+/* =====================================================
+   MOON
+===================================================== */
+
+.moon {
+
+    position: absolute;
+
+    width: 110px;
+    height: 110px;
+
+    right: 22%;
+    top: 17%;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle at 35% 30%,
+            #fff7ed,
+            #ffb59f 50%,
+            #d06b79
+        );
+
+    box-shadow:
+
+        0 0 70px
+        rgba(255, 184, 157, 0.3);
+}
+
+
+
+/* =====================================================
+   HERO MOUNTAINS
+===================================================== */
+
+.mountain {
+
+    position: absolute;
+
+    left: -5%;
+    right: -5%;
+
+    bottom: 12%;
+
+    height: 45%;
+
+    clip-path:
+
+        polygon(
+            0 100%,
+            10% 65%,
+            18% 82%,
+            29% 38%,
+            38% 76%,
+            51% 28%,
+            61% 74%,
+            73% 43%,
+            84% 75%,
+            93% 55%,
+            100% 75%,
+            100% 100%
+        );
+}
+
+
+.mountain-back {
+
+    background: #43516a;
+
+    opacity: 0.72;
+}
+
+
+.mountain-middle {
+
+    bottom: 7%;
+
+    background: #1d2c45;
+
+    transform: scale(1.05);
+}
+
+
+.mountain-front {
+
+    bottom: -2%;
+
+    background: #07111f;
+
+    transform: scale(1.1);
+}
+
+
+
+/* =====================================================
+   HERO STARS
+===================================================== */
+
+.hero-stars {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.65;
+
+    background-image:
+
+        radial-gradient(
+            circle at 20% 18%,
+            white 0 1px,
+            transparent 1.5px
+        ),
+
+        radial-gradient(
+            circle at 36% 12%,
+            white 0 1px,
+            transparent 1.5px
+        ),
+
+        radial-gradient(
+            circle at 57% 21%,
+            white 0 1px,
+            transparent 1.5px
+        ),
+
+        radial-gradient(
+            circle at 78% 14%,
+            white 0 1px,
+            transparent 1.5px
+        ),
+
+        radial-gradient(
+            circle at 83% 35%,
+            white 0 1px,
+            transparent 1.5px
+        );
+}
+
+
+
+/* =====================================================
+   DISCOVERY GRID
+===================================================== */
+
+.discoveries {
+
+    display: grid;
+
+    grid-template-columns:
+        1.32fr
+        0.92fr
+        1fr;
+
+    gap: 18px;
+
+    margin-top: 18px;
+}
+
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.card {
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(15, 28, 48, 0.84),
+            rgba(4, 12, 23, 0.84)
+        );
+
+    box-shadow:
+
+        0 20px 55px
+        rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(20px);
+
+    border-radius: var(--radius);
+
+    padding: 22px;
+}
+
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.card-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 14px;
+}
+
+
+.card-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+.eyebrow {
+
+    color: #b4c0d5;
+
+    font-size: 10px;
+
+    letter-spacing: 0.25em;
+
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+
+
+/* =====================================================
+   CARD ICONS
+===================================================== */
+
+.card-icon,
+.fact-icon {
+
+    flex: 0 0 auto;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+}
+
+
+.card-icon {
+
+    width: 28px;
+    height: 28px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+.nasa-icon {
+
+    background: #1d4b9a;
+
+    color: white;
+
+    font-size: 7px;
+}
+
+
+.anime-icon {
+
+    background: #e95d73;
+
+    font-size: 14px;
+}
+
+
+.crypto-icon {
+
+    background: #f59a24;
+
+    color: #17100a;
+
+    font-size: 14px;
+}
+
+
+.fact-icon {
+
+    width: 28px;
+    height: 28px;
+
+    font-size: 15px;
+}
+
+
+
+/* =====================================================
+   LIVE
+===================================================== */
+
+.live-pill {
+
+    padding:
+        7px
+        10px;
+
+    border:
+        1px solid
+        rgba(147, 174, 220, 0.16);
+
+    border-radius: 999px;
+
+    color: #aebbd0;
+
+    font-size: 9px;
+
+    letter-spacing: 0.14em;
+}
+
+
+.live-pill b,
+.live-status b {
+
+    display: inline-block;
+
+    width: 5px;
+    height: 5px;
+
+    margin-left: 6px;
+
+    border-radius: 50%;
+
+    background: var(--green);
+
+    box-shadow:
+        0 0 10px var(--green);
+}
+
+
+.live-status {
+
+    color: var(--green);
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+
+/* =====================================================
+   SPACE CARD
+===================================================== */
+
+.space-card {
+
+    min-height: 350px;
+}
+
+
+.space-content {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        0.88fr;
+
+    gap: 18px;
+
+    margin-top: 24px;
+}
+
+
+.space-copy {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 250px;
+}
+
+
+.space-copy h2 {
+
+    margin-bottom: 14px;
+
+    font-family: var(--serif);
+
+    font-size: 27px;
+
+    line-height: 1.1;
+
+    letter-spacing: -0.02em;
+}
+
+
+.space-copy p {
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    line-height: 1.72;
+}
+
+
+.space-description-secondary {
+
+    margin-top: 13px;
+}
+
+
+.card-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: auto;
+}
+
+
+
+/* =====================================================
+   SPACE IMAGE
+===================================================== */
+
+.space-image {
+
+    position: relative;
+
+    min-height: 250px;
+
+    overflow: hidden;
+
+    border-radius: 17px;
+
+    background:
+
+        radial-gradient(
+            circle at 60% 40%,
+            rgba(116, 93, 255, 0.65),
+            transparent 20%
+        ),
+
+        linear-gradient(
+            145deg,
+            #17143d,
+            #142b4f,
+            #070d1c
+        );
+}
+
+
+.space-nebula {
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: 16%;
+    left: 28%;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            ellipse,
+            rgba(232, 90, 166, 0.65),
+            rgba(96, 74, 221, 0.25) 45%,
+            transparent 70%
+        );
+
+    filter: blur(8px);
+
+    transform: rotate(-25deg);
+}
+
+
+.space-stars {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+
+        radial-gradient(
+            circle at 18% 24%,
+            white 0 1px,
+            transparent 1.5px
+        ),
+
+        radial-gradient(
+            circle at 38% 14%,
+            white 0 1px,
+            transparent 1.5px
+        ),
+
+        radial-gradient(
+            circle at 70% 25%,
+            white 0 1px,
+            transparent 1.5px
+        ),
+
+        radial-gradient(
+            circle at 82% 56%,
+            white 0 1px,
+            transparent 1.5px
+        ),
+
+        radial-gradient(
+            circle at 23% 70%,
+            white 0 1px,
+            transparent 1.5px
+        );
+}
+
+
+.space-image-label {
+
+    position: absolute;
+
+    left: 18px;
+    bottom: 18px;
+
+    z-index: 2;
+
+    color:
+        rgba(255,255,255,0.5);
+
+    font-size: 8px;
+
+    letter-spacing: 0.3em;
+}
+
+
+.image-expand {
+
+    position: absolute;
+
+    right: 10px;
+    bottom: 10px;
+
+    z-index: 3;
+
+    width: 28px;
+    height: 28px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(5, 10, 18, 0.65);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.2);
+}
+
+
+
+/* =====================================================
+   ANIME CARD
+===================================================== */
+
+.anime-card {
+
+    min-height: 350px;
+}
+
+
+.anime-content {
+
+    display: grid;
+
+    grid-template-columns:
+        0.75fr
+        1fr;
+
+    gap: 16px;
+
+    margin-top: 24px;
+
+    min-height: 250px;
+}
+
+
+.anime-image {
+
+    min-height: 250px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 17px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #472a4b,
+            #1d2343,
+            #080f1e
+        );
+}
+
+
+.anime-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    top: 25%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle at 35% 30%,
+            #f7d6bd,
+            #bd7581 58%,
+            #322044
+        );
+}
+
+
+.anime-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 15%;
+    right: 15%;
+
+    bottom: -5%;
+
+    height: 55%;
+
+    background: #10182a;
+
+    clip-path:
+
+        polygon(
+            50% 0,
+            68% 27%,
+            100% 100%,
+            0 100%,
+            32% 27%
+        );
+}
+
+
+.anime-image-placeholder {
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 15px;
+
+    transform: translateX(-50%);
+
+    z-index: 3;
+
+    color:
+        rgba(255,255,255,0.45);
+
+    font-size: 8px;
+
+    letter-spacing: 0.3em;
+}
+
+
+.anime-copy {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.anime-copy h2 {
+
+    margin:
+        7px
+        0
+        10px;
+
+    font-family: var(--serif);
+
+    font-size: 22px;
+
+    letter-spacing: -0.02em;
+}
+
+
+.anime-meta {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 13px;
+
+    color: #8491a7;
+
+    font-size: 10px;
+}
+
+
+.anime-meta strong {
+
+    color: #e7ecf5;
+}
+
+
+.rating {
+
+    color: #ffc03d;
+
+    font-size: 15px;
+}
+
+
+.anime-copy p {
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    line-height: 1.72;
+}
+
+
+.anime-copy .outline-button {
+
+    margin-top: auto;
+
+    align-self: flex-start;
+}
+
+
+
+/* =====================================================
+   CRYPTO CARD
+===================================================== */
+
+.crypto-card {
+
+    min-height: 350px;
+}
+
+
+.crypto-list {
+
+    margin-top: 26px;
+}
+
+
+.crypto-row {
+
+    min-height: 63px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.45fr
+        0.9fr
+        0.58fr
+        48px;
+
+    align-items: center;
+
+    gap: 8px;
+
+    border-bottom:
+        1px solid
+        rgba(145, 168, 208, 0.11);
+}
+
+
+.crypto-row:last-child {
+
+    border-bottom: none;
+}
+
+
+.coin-name {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.coin-name strong {
+
+    font-size: 11px;
+}
+
+
+.coin-name small {
+
+    color: #67758c;
+
+    font-size: 9px;
+}
+
+
+.coin {
+
+    width: 26px;
+    height: 26px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.bitcoin {
+
+    background: #f59b25;
+}
+
+
+.ethereum {
+
+    background: #6578f2;
+}
+
+
+.solana {
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c69ff,
+            #38e7b1
+        );
+}
+
+
+.crypto-row > strong {
+
+    font-size: 10px;
+
+    font-weight: 500;
+}
+
+
+.change {
+
+    font-size: 9px;
+
+    text-align: right;
+}
+
+
+.positive {
+
+    color: var(--green);
+}
+
+
+.negative {
+
+    color: var(--red);
+}
+
+
+
+/* =====================================================
+   MINI CHART
+===================================================== */
+
+.mini-chart {
+
+    height: 26px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.mini-chart::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    top: 50%;
+
+    height: 1.5px;
+
+    border-radius: 100%;
+}
+
+
+.positive-chart::before {
+
+    background: var(--green);
+
+    transform: rotate(-10deg);
+
+    box-shadow:
+
+        10px 7px 0 -0.2px var(--green),
+
+        21px -4px 0 -0.2px var(--green),
+
+        32px -8px 0 -0.2px var(--green);
+}
+
+
+.negative-chart::before {
+
+    background: var(--red);
+
+    transform: rotate(12deg);
+
+    box-shadow:
+
+        11px -7px 0 -0.2px var(--red),
+
+        22px 4px 0 -0.2px var(--red),
+
+        33px -2px 0 -0.2px var(--red);
+}
+
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.outline-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding:
+        10px
+        15px;
+
+    border:
+        1px solid
+        rgba(145, 168, 208, 0.36);
+
+    border-radius: 999px;
+
+    color: white;
+
+    background:
+        rgba(255,255,255,0.015);
+
+    font-size: 11px;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.outline-button:hover {
+
+    border-color:
+        rgba(177, 156, 255, 0.7);
+
+    background:
+        rgba(141, 107, 255, 0.08);
+
+    transform: translateY(-1px);
+}
+
+
+.outline-button span {
+
+    font-size: 15px;
+}
+
+
+.date-label {
+
+    color: #748198;
+
+    font-size: 10px;
+}
+
+
+.crypto-button {
+
+    margin-top: 15px;
+}
+
+
+.icon-button {
+
+    width: 30px;
+    height: 30px;
+
+    display: grid;
+
+    place-items: center;
+
+    border:
+        1px solid
+        rgba(145, 168, 208, 0.25);
+
+    border-radius: 50%;
+
+    color: #dce5f3;
+
+    background: transparent;
+
+    font-size: 17px;
+
+    transition: 0.2s ease;
+}
+
+
+.icon-button:hover {
+
+    border-color:
+        rgba(177, 156, 255, 0.7);
+
+    transform: rotate(25deg);
+}
+
+
+
+/* =====================================================
+   RANDOM FACT
+===================================================== */
+
+.fact-card {
+
+    min-height: 200px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    margin-top: 18px;
+
+    padding: 25px;
+}
+
+
+.fact-content {
+
+    width: 55%;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.fact-card blockquote {
+
+    max-width: 650px;
+
+    margin:
+        24px
+        0
+        17px;
+
+    font-family: var(--serif);
+
+    font-size:
+        clamp(
+            23px,
+            2.4vw,
+            34px
+        );
+
+    line-height: 1.2;
+
+    letter-spacing: -0.025em;
+}
+
+
+.fact-line {
+
+    width: 36px;
+
+    height: 2px;
+
+    margin-bottom: 15px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            var(--purple-light),
+            transparent
+        );
+}
+
+
+
+/* =====================================================
+   FACT ART
+===================================================== */
+
+.fact-art {
+
+    position: absolute;
+
+    inset:
+        0
+        0
+        0
+        43%;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 63% 36%,
+            rgba(255, 196, 104, 0.95) 0 5%,
+            rgba(255, 157, 98, 0.35) 6%,
+            transparent 21%
+        ),
+
+        linear-gradient(
+            180deg,
+            #263a5d,
+            #ce7181 55%,
+            #101c2e
+        );
+}
+
+
+.fact-art::before,
+.fact-art::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: -5%;
+    right: -5%;
+
+    bottom: 0;
+
+    height: 72%;
+
+    clip-path:
+
+        polygon(
+            0 100%,
+            11% 63%,
+            20% 80%,
+            31% 35%,
+            40% 70%,
+            51% 28%,
+            62% 77%,
+            73% 45%,
+            84% 70%,
+            94% 55%,
+            100% 76%,
+            100% 100%
+        );
+}
+
+
+.fact-art::before {
+
+    background: #263b59;
+
+    opacity: 0.7;
+}
+
+
+.fact-art::after {
+
+    bottom: -3%;
+
+    background: #0b1728;
+
+    clip-path:
+
+        polygon(
+            0 100%,
+            14% 71%,
+            23% 86%,
+            37% 55%,
+            49% 88%,
+            61% 62%,
+            76% 91%,
+            89% 65%,
+            100% 85%,
+            100% 100%
+        );
+}
+
+
+.fact-sun {
+
+    position: absolute;
+
+    width: 55px;
+    height: 55px;
+
+    top: 17%;
+    left: 63%;
+
+    border-radius: 50%;
+
+    background: #ffc77a;
+
+    box-shadow:
+        0 0 55px
+        rgba(255, 189, 112, 0.55);
+}
+
+
+.fact-cloud {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background:
+        rgba(242, 238, 246, 0.82);
+
+    filter: blur(7px);
+}
+
+
+.cloud-one {
+
+    width: 220px;
+    height: 55px;
+
+    right: 6%;
+    bottom: 13%;
+}
+
+
+.cloud-two {
+
+    width: 150px;
+    height: 42px;
+
+    right: 24%;
+    bottom: 23%;
+}
+
+
+.cloud-three {
+
+    width: 100px;
+    height: 35px;
+
+    right: 1%;
+    bottom: 33%;
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding:
+        25px
+        5px
+        0;
+
+    color: #526076;
+
+    font-size: 10px;
+
+    letter-spacing: 0.12em;
+}
+
+
+
+/* =====================================================
+   LOADING OVERLAY
+===================================================== */
+
+.inspire-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 20;
+
+    display: grid;
+
+    place-content: center;
+
+    gap: 18px;
+
+    text-align: center;
+
+    background:
+        rgba(2, 6, 14, 0.72);
+
+    backdrop-filter: blur(10px);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.inspire-overlay.active {
+
+    opacity: 1;
+
+    pointer-events: auto;
+}
+
+
+.loader-orbit {
+
+    width: 58px;
+    height: 58px;
+
+    margin: auto;
+
+    border:
+        1px solid
+        rgba(177, 156, 255, 0.22);
+
+    border-top-color:
+        var(--purple-light);
+
+    border-radius: 50%;
+
+    animation:
+        spin
+        0.9s
+        linear
+        infinite;
+}
+
+
+.loader-orbit span {
+
+    display: block;
+
+    width: 7px;
+    height: 7px;
+
+    margin: 3px;
+
+    border-radius: 50%;
+
+    background: var(--cyan);
+
+    box-shadow:
+        0 0 15px
+        var(--cyan);
+}
+
+
+.inspire-overlay p {
+
+    color: #dce4f2;
+
+    font-size: 13px;
+}
+
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+@keyframes spin {
+
+    to {
+
+        transform:
+            rotate(360deg);
+    }
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1120px) {
+
+    .page {
+
+        width:
+            min(
+                100% - 36px,
+                980px
+            );
+    }
+
+
+    .hero-content {
+
+        padding-left: 35px;
+    }
+
+
+    .discoveries {
+
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+
+    .space-card {
+
+        grid-column:
+            span 2;
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 760px) {
+
+    .page {
+
+        width:
+            min(
+                100% - 24px,
+                620px
+            );
+    }
+
+
+    .header {
+
+        height: 72px;
+    }
+
+
+    .logo {
+
+        font-size: 15px;
+    }
+
+
+    .hero {
+
+        min-height: 650px;
+
+        align-items:
+            flex-start;
+    }
+
+
+    .hero-content {
+
+        width: 100%;
+
+        padding:
+            50px
+            25px
+            0;
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            clamp(
+                45px,
+                12vw,
+                65px
+            );
+    }
+
+
+    .hero-description {
+
+        font-size: 14px;
+    }
+
+
+    .hero-visual {
+
+        inset:
+            38%
+            0
+            0;
+    }
+
+
+    .discoveries {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .space-card {
+
+        grid-column: auto;
+    }
+
+
+    .space-content {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .space-image {
+
+        order: -1;
+
+        min-height: 220px;
+    }
+
+
+    .anime-content {
+
+        grid-template-columns:
+            0.8fr
+            1fr;
+    }
+
+
+    .crypto-row {
+
+        grid-template-columns:
+            1.5fr
+            0.85fr;
+    }
+
+
+    .mini-chart {
+
+        display: none;
+    }
+
+
+    .change {
+
+        text-align: left;
+    }
+
+
+    .fact-card {
+
+        min-height: 340px;
+
+        align-items:
+            flex-start;
+    }
+
+
+    .fact-content {
+
+        width: 100%;
+    }
+
+
+    .fact-art {
+
+        inset:
+            47%
+            0
+            0;
+    }
+
+
+    .footer {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .hero {
+
+        min-height: 620px;
+    }
+
+
+    .hero-content {
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+
+    .card {
+
+        padding: 18px;
+    }
+
+
+    .anime-content {
+
+        grid-template-columns:
+            0.72fr
+            1fr;
+    }
+
+
+    .fact-card {
+
+        padding: 20px;
+    }
+
+
+    .fact-art {
+
+        inset:
+            54%
+            0
+            0;
+    }
+
+}

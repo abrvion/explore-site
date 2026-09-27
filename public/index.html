@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore something extraordinary."
+    >
+
+    <title>Explore — Discover Something Extraordinary</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body>
+
+    <div class="page">
+
+        <!-- =========================================
+             HEADER
+        ========================================== -->
+
+        <header class="header">
+
+            <a href="/" class="logo">
+
+                <span class="logo-mark">
+
+                    <svg
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+
+                        <ellipse
+                            cx="32"
+                            cy="32"
+                            rx="25"
+                            ry="10"
+                            transform="rotate(-28 32 32)"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                        />
+
+                        <circle
+                            cx="32"
+                            cy="32"
+                            r="4.5"
+                            fill="currentColor"
+                        />
+
+                        <path
+                            d="M11 43C19 46 34 45 46 38"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                        />
+
+                    </svg>
+
+                </span>
+
+
+                <span class="logo-text">
+                    EXPLORE
+                </span>
+
+            </a>
+
+        </header>
+
+
+
+        <main>
+
+
+            <!-- =========================================
+                 HERO
+            ========================================== -->
+
+            <section class="hero">
+
+                <div class="hero-content">
+
+                    <div class="hero-eyebrow">
+
+                        <span>
+                            A SMALL WINDOW TO A BIGGER WORLD
+                        </span>
+
+                        <span class="eyebrow-line"></span>
+
+                    </div>
+
+
+                    <h1>
+                        Discover
+                        <br>
+                        Something
+                        <br>
+                        <span>Extraordinary.</span>
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        Space, anime, markets, facts and more —
+                        all in one place. A little curiosity goes
+                        a long way.
+
+                    </p>
+
+
+                    <button
+                        class="inspire-button"
+                        id="inspireButton"
+                    >
+
+                        <span class="button-icon">
+                            ✦
+                        </span>
+
+                        <span>
+                            Get Inspired
+                        </span>
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="hero-visual"
+                    aria-hidden="true"
+                >
+
+                    <div class="moon"></div>
+
+                    <div class="mountain mountain-back"></div>
+
+                    <div class="mountain mountain-middle"></div>
+
+                    <div class="mountain mountain-front"></div>
+
+                    <div class="hero-stars"></div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================================
+                 DISCOVERY GRID
+            ========================================== -->
+
+            <section class="discoveries">
+
+
+                <!-- =====================================
+                     SPACE CARD
+                ====================================== -->
+
+                <article class="card space-card">
+    <div class="card-heading">
+        <div class="card-title">
+            <span class="card-icon nasa-icon">NASA</span>
+            <span class="eyebrow">TODAY IN SPACE</span>
+        </div>
+
+        <span class="live-pill">
+            NASA APOD
+            <b></b>
+        </span>
+    </div>
+
+    <div class="space-content">
+
+        <div class="space-copy">
+            <h2 id="spaceTitle">Loading...</h2>
+
+            <p id="spaceDescription">
+                Fetching today's picture from NASA.
+            </p>
+
+            <p class="space-description-secondary" id="spaceSecondary">
+                Discover something extraordinary from beyond our world.
+            </p>
+
+            <div class="card-footer">
+                <button class="outline-button" id="spaceLearnMore">
+                    Learn More <span>↗</span>
+                </button>
+
+                <span class="date-label" id="spaceDate">
+                    Loading...
+                </span>
+            </div>
+        </div>
+
+        <div class="space-image">
+            <img
+                id="spaceImage"
+                src=""
+                alt="NASA Astronomy Picture of the Day"
+            />
+
+            <div class="space-image-label" id="spaceImageLabel">
+                NASA APOD
+            </div>
+
+            <a
+                id="spaceImageLink"
+                class="image-expand"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open NASA image"
+            >
+                ↗
+            </a>
+        </div>
+
+    </div>
+</article>
+
+
+                <!-- =====================================
+                     ANIME CARD
+                ====================================== -->
+
+                <article class="card anime-card">
+
+                    <div class="card-heading">
+
+                        <div class="card-title">
+
+                            <span class="card-icon anime-icon">
+                                鳥
+                            </span>
+
+                            <span class="eyebrow">
+                                RANDOM ANIME
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="icon-button"
+                            aria-label="Refresh anime"
+                        >
+                            ↻
+                        </button>
+
+                    </div>
+
+
+                    <div class="anime-content">
+
+                        <div class="anime-image">
+
+                            <div class="anime-image-placeholder">
+                                ANIME
+                            </div>
+
+                        </div>
+
+
+                        <div class="anime-copy">
+
+                            <h2>
+                                Attack on Titan
+                            </h2>
+
+
+                            <div class="anime-meta">
+
+                                <span class="rating">
+                                    ★
+                                </span>
+
+                                <strong>
+                                    8.6
+                                </strong>
+
+                                <span>
+                                    2022
+                                </span>
+
+                                <span>
+                                    •
+                                </span>
+
+                                <span>
+                                    TV
+                                </span>
+
+                            </div>
+
+
+                            <p>
+
+                                Humanity fights for survival
+                                against gigantic Titans in a
+                                dark and thrilling world.
+
+                            </p>
+
+
+                            <button class="outline-button">
+
+                                Learn More
+
+                                <span>
+                                    ↗
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =====================================
+                     CRYPTO CARD
+                ====================================== -->
+
+                <article class="card crypto-card">
+
+                    <div class="card-heading">
+
+                        <div class="card-title">
+
+                            <span class="card-icon crypto-icon">
+                                ₿
+                            </span>
+
+                            <span class="eyebrow">
+                                CRYPTO SNAPSHOT
+                            </span>
+
+                        </div>
+
+
+                        <span class="live-status">
+
+                            Live
+
+                            <b></b>
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="crypto-list">
+
+
+                        <div class="crypto-row">
+
+                            <div class="coin-name">
+
+                                <span class="coin bitcoin">
+                                    ₿
+                                </span>
+
+                                <strong>
+                                    Bitcoin
+                                </strong>
+
+                                <small>
+                                    BTC
+                                </small>
+
+                            </div>
+
+
+                            <strong>
+                                $56,321
+                            </strong>
+
+
+                            <span class="change positive">
+                                +2.41%
+                            </span>
+
+
+                            <span class="mini-chart positive-chart"></span>
+
+                        </div>
+
+
+
+                        <div class="crypto-row">
+
+                            <div class="coin-name">
+
+                                <span class="coin ethereum">
+                                    ◆
+                                </span>
+
+                                <strong>
+                                    Ethereum
+                                </strong>
+
+                                <small>
+                                    ETH
+                                </small>
+
+                            </div>
+
+
+                            <strong>
+                                $2,412
+                            </strong>
+
+
+                            <span class="change positive">
+                                +1.83%
+                            </span>
+
+
+                            <span class="mini-chart positive-chart"></span>
+
+                        </div>
+
+
+
+                        <div class="crypto-row">
+
+                            <div class="coin-name">
+
+                                <span class="coin solana">
+                                    ≋
+                                </span>
+
+                                <strong>
+                                    Solana
+                                </strong>
+
+                                <small>
+                                    SOL
+                                </small>
+
+                            </div>
+
+
+                            <strong>
+                                $132
+                            </strong>
+
+
+                            <span class="change negative">
+                                -0.72%
+                            </span>
+
+
+                            <span class="mini-chart negative-chart"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="outline-button crypto-button">
+
+                        View More
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </button>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- =========================================
+                 RANDOM FACT
+            ========================================== -->
+
+            <section class="card fact-card">
+
+                <div class="fact-content">
+
+                    <div class="card-heading">
+
+                        <div class="card-title">
+
+                            <span class="fact-icon">
+                                💡
+                            </span>
+
+                            <span class="eyebrow">
+                                RANDOM FACT
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="icon-button"
+                            aria-label="Refresh fact"
+                        >
+                            ↻
+                        </button>
+
+                    </div>
+
+
+                    <blockquote>
+
+                        “A single cloud can weigh more
+                        than a million kilograms.”
+
+                    </blockquote>
+
+
+                    <div class="fact-line"></div>
+
+
+                    <button class="outline-button">
+
+                        Another Fact
+
+                        <span>
+                            ↻
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="fact-art"
+                    aria-hidden="true"
+                >
+
+                    <div class="fact-sun"></div>
+
+                    <div class="fact-cloud cloud-one"></div>
+
+                    <div class="fact-cloud cloud-two"></div>
+
+                    <div class="fact-cloud cloud-three"></div>
+
+                    <div class="fact-mountains"></div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+        <!-- =========================================
+             FOOTER
+        ========================================== -->
+
+        <footer class="footer">
+
+            <span>
+                EXPLORE
+            </span>
+
+            <span>
+                Built with curiosity.
+            </span>
+
+        </footer>
+
+    </div>
+
+
+
+    <!-- =========================================
+         LOADING OVERLAY
+    ========================================== -->
+
+    <div
+        class="inspire-overlay"
+        id="inspireOverlay"
+        aria-hidden="true"
+    >
+
+        <div class="loader-orbit">
+
+            <span></span>
+
+        </div>
+
+
+        <p>
+            Finding something extraordinary...
+        </p>
+
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
